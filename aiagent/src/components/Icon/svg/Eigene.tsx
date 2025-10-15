@@ -1,0 +1,73 @@
+const Eigene = (props: React.SVGProps<SVGSVGElement>) => {
+  return (
+    <svg
+      version="1.1"
+      id="Layer_1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      x="0px"
+      y="0px"
+      width="35px"
+      height="35px"
+      viewBox="0 0 35 40"
+      enable-background="new 0 0 35 40"
+      xmlSpace="preserve"
+    >
+      <image
+        id="image0"
+        width="35"
+        height="35"
+        x="0"
+        y="5"
+        href="data:image/png;base64,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"
+      />
+    </svg>
+  );
+};
+export default Eigene;

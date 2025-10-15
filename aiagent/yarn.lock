@@ -1901,7 +1901,7 @@
   resolved "https://registry.yarnpkg.com/@storybook/react-dom-shim/-/react-dom-shim-9.1.10.tgz#60e7898a8a7a03152b24a20c50af4cb35b0b98b6"
   integrity sha512-cxy8GTj73RMJIFPrgqdnMXePGX5iFohM5pDCZ63Te5m5GtzKqsILRXtBBLO6Ouexm/ZYRVznkKiwNKX/Fu24fQ==
 
-"@storybook/react-webpack5@^9.1.10":
+"@storybook/react-webpack5@9.1.10":
   version "9.1.10"
   resolved "https://registry.yarnpkg.com/@storybook/react-webpack5/-/react-webpack5-9.1.10.tgz#88b658735871c54dae843cde608915f43c7e5c59"
   integrity sha512-jJ5B704R2iIpF1gxlGaaV4I3feAFV2Bwva+/KaGEIHqG7yfvlX+0u4Mki2/xFxhLdHlIzx5FEZjfh41QlBsqxQ==
