@@ -79,12 +79,7 @@ export default function AiAgentIndicator({
           }
         }
       >
-        {iconSrc ? (
-          <Cubot />
-        ) : (
-          // 텍스트 대체 (간단한 기본값)
-          <span className="text-[12px] font-medium text-gray-700">AI</span>
-        )}
+        <Cubot />
       </button>
     </div>
   );

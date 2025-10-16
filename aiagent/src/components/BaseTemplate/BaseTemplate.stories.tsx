@@ -38,7 +38,7 @@ export const Default: Story = {
     ),
     children: (
       <div className="space-y-3 pb-14">
-        {Array.from({ length: 20 }).map((_, i) => (
+        {Array.from({ length: 25 }).map((_, i) => (
           <p key={i} className="text-sm text-gray-600">
             리스트 아이템 {i + 1}
           </p>
