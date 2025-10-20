@@ -3,10 +3,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import BaseTemplate from "./components/BaseTemplate/BaseTemplate";
 import AiAgentIndicator from "./components/AiAgentIndicator/AiAgentIndicator";
+import ChatInput from "./components/ChatInput";
 
 function App() {
   const [isAgentOpen, setIsAgentOpen] = useState(false);
-
+  const [messages, setMessages] = useState<string[]>([]);
+  const handleSend = (text: string) => {
+    console.log("보낸 메시지:", text);
+    setMessages((prev) => [...prev, text]);
+  };
   return (
     <BrowserRouter>
       <Routes>
@@ -30,10 +35,24 @@ function App() {
                 visible={isAgentOpen}
                 onClose={() => setIsAgentOpen(false)}
                 header={<div className="font-medium">AI Chat</div>}
-                footer={<div>입력창은 다음 단계에서 추가할 예정</div>}
+                footer={<ChatInput onSend={handleSend} />}
+                bodyClassName="bg-white"
+                contentBottomPadding={72} // 입력창 높이에 맞게 조절
               >
-                <div className="text-sm text-gray-600">
-                  여기에 채팅 메시지가 표시될 영역입니다.
+                <div className="flex flex-col gap-2 text-sm text-gray-800">
+                  {messages.length === 0 && (
+                    <div className="text-gray-400 text-center mt-8">
+                      아직 메시지가 없습니다.
+                    </div>
+                  )}
+                  {messages.map((msg, i) => (
+                    <div
+                      key={i}
+                      className="self-end bg-blue-500 text-white px-3 py-2 rounded-lg max-w-[80%]"
+                    >
+                      {msg}
+                    </div>
+                  ))}
                 </div>
               </BaseTemplate>
             </>
