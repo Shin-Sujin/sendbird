@@ -26,7 +26,6 @@ function App() {
               <AiAgentIndicator
                 visible={true}
                 align="right"
-                iconSrc="/images/ai-indicator.png"
                 onClick={() => setIsAgentOpen(true)} // ✅ 클릭 시 채팅창 열기
               />
 

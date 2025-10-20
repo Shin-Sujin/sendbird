@@ -34,7 +34,7 @@ npm install
 yarn start
 ```
 
-> 기본 포트: **http://localhost:3000**
+> 기본 포트: **[http://localhost:3000](http://localhost:3000)**
 
 소스 코드 수정 시 자동으로 페이지가 새로고침됩니다 (Hot Reload).
 
@@ -70,7 +70,7 @@ yarn test
 yarn storybook
 ```
 
-> 기본 포트: **http://localhost:6006**
+> 기본 포트: **[http://localhost:6006](http://localhost:6006)**
 
 > 컴포넌트를 문서화하고, 독립적으로 테스트할 수 있는 환경을 제공합니다.
 
