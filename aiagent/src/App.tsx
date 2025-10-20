@@ -4,7 +4,9 @@ import { useState } from "react";
 import BaseTemplate from "./components/BaseTemplate/BaseTemplate";
 import AiAgentIndicator from "./components/AiAgentIndicator/AiAgentIndicator";
 import ChatInput from "./components/ChatInput";
+import SendBird from "sendbird";
 
+const sb = new SendBird({ appId: "YOUR_APP_ID" });
 function App() {
   const [isAgentOpen, setIsAgentOpen] = useState(false);
   const [messages, setMessages] = useState<string[]>([]);
