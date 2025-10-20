@@ -7,8 +7,6 @@ type Props = {
   visible?: boolean;
   /** 왼쪽/오른쪽 하단 위치 선택 */
   align?: "right" | "left";
-  /** 이미지 아이콘 (없으면 텍스트 표시) */
-  iconSrc?: string;
   /** 접근성 라벨 */
   ariaLabel?: string;
   /** 클릭 핸들러 */
@@ -25,7 +23,6 @@ type Props = {
 export default function AiAgentIndicator({
   visible = true,
   align = "right",
-  iconSrc,
   ariaLabel = "Open AI Agent",
   onClick,
   className = "",

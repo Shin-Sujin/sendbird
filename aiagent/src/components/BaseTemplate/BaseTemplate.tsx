@@ -12,9 +12,12 @@ type BaseTemplateProps = {
   ariaLabel?: string;
   ariaDescription?: string;
   className?: string;
+  /** ✅ 추가: 본문 클래스를 외부에서 주입해서 배경/패딩 등을 제어 */
+  bodyClassName?: string;
+  /** ✅ 추가: 푸터 높이에 맞춰 본문 하단 여백(px) */
+  contentBottomPadding?: number;
   header?: React.ReactNode;
   footer?: React.ReactNode;
-  /** ⬅ 추가: 닫기 콜백 */
   onClose?: () => void;
 };
 
@@ -27,6 +30,10 @@ export default function BaseTemplate({
   ariaLabel = "Base template dialog",
   ariaDescription,
   className = "",
+  /** ✅ 기본값: 본문은 스크롤 가능한 영역 + 가벼운 배경 */
+  bodyClassName = "bg-white",
+  /** ✅ 기본값: 푸터 높이 확보용 패딩 (기존 pb-40 대체) */
+  contentBottomPadding = 56,
   header,
   footer,
   children,
@@ -109,8 +116,10 @@ export default function BaseTemplate({
         className={[
           "relative w-full flex-1 min-h-0",
           "overscroll-contain",
-          "bg-red-200 pb-40",
+          bodyClassName, // ✅ 외부 주입
         ].join(" ")}
+        /* ✅ 푸터 높이만큼 하단 패딩 */
+        style={{ paddingBottom: contentBottomPadding }}
       >
         <div className="h-full overflow-y-auto overflow-x-hidden px-4 py-3">
           {children}

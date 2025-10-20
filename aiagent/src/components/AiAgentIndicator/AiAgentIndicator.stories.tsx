@@ -38,6 +38,5 @@ export const LeftAligned: Story = {
 export const WithIcon: Story = {
   args: {
     visible: true,
-    iconSrc: "https://cdn-icons-png.flaticon.com/512/4712/4712100.png", // 테스트용 아이콘
   },
 };
