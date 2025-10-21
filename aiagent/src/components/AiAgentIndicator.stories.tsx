@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react-webpack5";
-import AiAgentIndicator from "./AiAgentIndicator";
+import AiAgentIndicator from "components/AiAgentIndicator";
 
 const meta: Meta<typeof AiAgentIndicator> = {
   title: "Components/AiAgentIndicator", // Storybook 사이드바에 보이는 이름

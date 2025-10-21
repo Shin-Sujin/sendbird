@@ -1,6 +1,6 @@
 // src/components/AiAgentIndicator.tsx
 import React from "react";
-import Cubot from "../Icon/svg/Cubot";
+import Cubot from "./Icon/svg/Cubot";
 
 type Props = {
   /** 표시/비표시 제어 (SCSS의 --visible 역할) */
