@@ -1,8 +1,8 @@
 // src/App.tsx
 import { useEffect, useState } from "react";
-import { connectAndGetChannel } from "./lib/chatChannel";
-import AiAgentIndicator from "./components/AiAgentIndicator/AiAgentIndicator";
-import BaseTemplate from "./components/BaseTemplate/BaseTemplate";
+import { connectAndGetChannel } from "lib/chatChannel";
+import AiAgentIndicator from "components/AiAgentIndicator";
+import BaseTemplate from "components/BaseTemplate";
 import ChatInput from "./components/ChatInput";
 
 import type { GroupChannel } from "@sendbird/chat/groupChannel";
@@ -110,7 +110,7 @@ function App() {
     <>
       {/* 메인 화면 */}
       <div className="flex min-h-screen items-center justify-center bg-gray-100 text-3xl text-blue-500 font-bold">
-        Tailwind Works 🎉
+        AI AGENT TEST PAGE 🎉
       </div>
 
       {/* 하단 AI Indicator 버튼 */}
